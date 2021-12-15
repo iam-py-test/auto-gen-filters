@@ -18,6 +18,6 @@ chrome_options.add_argument('--no-sandbox')
 driver = webdriver.Chrome(service=s, options=chrome_options)
 
 driver.get("https://iam-py-test.github.io/malware/")
-driver.find_element(By.LINK_TEXT, "malware").click()
+driver.execute_script("alert('Hello world')")
 driver.save_screenshot("test.png")
 driver.close()
