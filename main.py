@@ -16,6 +16,6 @@ chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
 chrome_options.add_argument('--no-sandbox')
 driver = webdriver.Chrome(service=s, options=chrome_options)
 
-driver.get("https://testsafebrowsing.appspot.com/s/malware.html")
-driver.save_screenshot("malware.png")
+driver.get("https://iam-py-test.github.io/malware/malware.exe")
+driver.save_screenshot("test.png")
 driver.close()
