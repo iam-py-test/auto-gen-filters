@@ -19,6 +19,6 @@ driver = webdriver.Chrome(service=s, options=chrome_options)
 
 driver.get("https://iam-py-test.github.io/malware/")
 malware = driver.find_element(By.LINK_TEXT, "malware")
-webdriver.ActionChains(driver).click_and_hold(malware).perform()
+webdriver.ActionChains(driver).double_click(malware).perform()
 driver.save_screenshot("test.png")
 driver.close()
